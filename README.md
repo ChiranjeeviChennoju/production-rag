@@ -2,8 +2,6 @@
 
 A fully open-source, zero-cost Retrieval-Augmented Generation (RAG) system built for healthcare research documents. Ingests PDFs, performs hybrid retrieval (vector + keyword), re-ranks results with a cross-encoder, and generates cited answers via a local LLM — all evaluated through a CI pipeline.
 
-> Built as a portfolio project to demonstrate production RAG engineering: not just "call an API", but the full stack.
-
 ---
 
 ## What makes this different from a basic RAG
@@ -205,28 +203,3 @@ uvicorn src.api.main:app --reload
 streamlit run ui/app.py
 ```
 
----
-
-## Apple Silicon Notes
-
-This project runs fully local on M1/M2/M3/M4 Macs:
-- Ollama uses Metal GPU acceleration automatically
-- `sentence-transformers` runs on MPS (Apple's GPU backend)
-- ChromaDB and BM25 are CPU-only (no issues)
-- Recommended model on 8GB RAM: `tinyllama` — fits comfortably alongside the embedding model
-
----
-
-## Roadmap
-
-- [x] Phase 1 — Basic RAG pipeline (loader, chunker, embedder, ChromaDB, BM25, Ollama)
-- [x] Phase 2 — Hybrid retrieval + cross-encoder re-ranking + citation checker
-- [ ] Phase 3 — RAGAS evaluation + GitHub Actions CI
-- [ ] Phase 4 — FastAPI layer + Streamlit UI
-- [ ] Phase 5 — Docker + docker-compose for reproducible deployment
-
----
-
-## License
-
-MIT
