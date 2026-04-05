@@ -109,7 +109,25 @@ production-rag/
 
 ## Quickstart
 
-### 1. Clone and set up environment
+### 1. Set up environment variables
+
+Copy the example env file and fill in your API key:
+
+```bash
+cp .env.example .env
+```
+
+Open `.env` and set your key:
+
+```
+GROQ_API_KEY=your_groq_api_key_here
+```
+
+Get a free Groq API key at [console.groq.com](https://console.groq.com) — no credit card required.
+
+> `.env` is gitignored and will never be committed. Never hardcode or share your API key.
+
+### 2. Clone and set up environment
 
 ```bash
 git clone https://github.com/your-username/production-rag.git

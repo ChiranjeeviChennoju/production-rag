@@ -11,7 +11,7 @@ from src.embeddings.embedder import Embedder
 from src.retrieval.vector_store import VectorStore
 from src.retrieval.bm25_store import BM25Store
 from src.retrieval.hybrid import HybridRetriever
-from src.generation.llm_client import OllamaClient
+from src.generation.llm_client import GroqClient
 
 
 def main():
@@ -48,7 +48,7 @@ Question: {query}
 Answer:"""
 
     print("Generating answer...\n")
-    llm = OllamaClient()
+    llm = GroqClient()
     answer = llm.generate(prompt)
     print(answer)
 
