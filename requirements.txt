@@ -24,3 +24,10 @@ pydantic-settings
 pyyaml
 httpx
 python-multipart
+groq
+
+# Evaluation
+ragas
+datasets
+langchain-groq
+langchain-community

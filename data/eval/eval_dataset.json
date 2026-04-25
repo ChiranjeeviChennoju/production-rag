@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "domain": "economics",
+    "source": "ERP-2025.pdf",
+    "version": "1.0",
+    "total_pairs": 20
+  },
+  "pairs": [
+    {
+      "id": "eval_001",
+      "question": "What was the condition of the U.S. economy when Biden took office?",
+      "expected_answer": "When President Biden took office in January 2021, the U.S. economy was still badly damaged by the COVID-19 pandemic. Unemployment was elevated at 6.4 percent, payroll employment was far below its pre-pandemic level, many businesses had closed, and households faced serious financial risks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_002",
+      "question": "How does the report describe the Biden-Harris Administration's approach to rebuilding the economy?",
+      "expected_answer": "The report says the administration focused on rebuilding the economy from the middle out and bottom up, rather than relying on trickle-down economics. This meant supporting workers and families, investing in U.S. industries, strengthening the middle class, and using public policy to promote broad-based growth.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_003",
+      "question": "How many jobs were created during the Biden-Harris Administration?",
+      "expected_answer": "The report states that nearly 17 million jobs were created during the Biden-Harris Administration. It describes the recovery as one of the fastest and most robust on record, with the labor market returning quickly to full employment.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_004",
+      "question": "What did the American Rescue Plan do for families during the pandemic recovery?",
+      "expected_answer": "The American Rescue Plan provided direct economic relief to families, helped support state and local governments, kept essential workers such as teachers and police employed, and expanded the Child Tax Credit. The expanded Child Tax Credit helped cut child poverty in half to its lowest rate in history.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_005",
+      "question": "Why did inflation rise so much after the pandemic?",
+      "expected_answer": "Inflation rose because strong consumer demand collided with constrained supply. Pandemic-related supply chain disruptions, labor shortages, shifts in demand toward goods, and later food and energy price pressures from Russia's invasion of Ukraine all contributed to higher inflation.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_006",
+      "question": "What does the report mean by saying the economy achieved a soft landing?",
+      "expected_answer": "The report uses soft landing to mean that inflation declined significantly while the economy continued to have steady employment, strong growth, and rising real wages. This was important because many forecasters expected inflation to fall only if unemployment rose substantially.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_007",
+      "question": "Why does the report argue against trickle-down economics?",
+      "expected_answer": "The report argues that trickle-down economics failed to deliver broad gains to most households. Cutting taxes for the very wealthy did not meaningfully improve the lives of working families and instead contributed to greater inequality and higher national debt.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_008",
+      "question": "What is the purpose of the CHIPS and Science Act?",
+      "expected_answer": "The CHIPS and Science Act is intended to bring advanced manufacturing, especially semiconductor production, back to the United States. It is designed to strengthen domestic supply chains, attract manufacturing investment, and help the United States lead in future industries.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_009",
+      "question": "How did the Inflation Reduction Act help with prescription drug costs?",
+      "expected_answer": "The Inflation Reduction Act reduced prescription drug costs by capping Medicare out-of-pocket prescription drug spending at $2,000 per year and limiting insulin costs for seniors to $35 per month. It also gave Medicare the authority to negotiate prices for certain high-cost drugs.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_010",
+      "question": "What is the Global Tax Deal supposed to fix?",
+      "expected_answer": "The Global Tax Deal is meant to address problems caused by multinational corporations shifting profits across countries to reduce their tax bills. The deal aims to reduce harmful corporate tax competition, protect government revenues, improve fairness, and better align tax rules with a globalized and digital economy.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_011",
+      "question": "What is the global minimum tax rate discussed in the report?",
+      "expected_answer": "The Global Tax Deal includes a 15 percent global minimum corporate tax rate for large multinational corporations. This is intended to reduce incentives for countries to keep lowering tax rates in a race to the bottom.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_012",
+      "question": "How has remote work changed the economy since the pandemic?",
+      "expected_answer": "Remote work is one of the most important labor market changes left by the pandemic. Many workers and employers continued using remote or hybrid arrangements after the acute phase of the pandemic, changing how workers match with jobs, where economic activity takes place, and how businesses manage collaboration.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_013",
+      "question": "Who benefits from remote work according to the report?",
+      "expected_answer": "Remote work can benefit workers who face barriers to traditional in-person jobs, including people with disabilities, caregivers, and workers limited by geography. It can expand job access by loosening the connection between where someone lives and where their employer is located.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_014",
+      "question": "What is the report's main climate goal for the United States?",
+      "expected_answer": "The report focuses on achieving a net zero carbon dioxide emissions economy in the United States. This goal requires decarbonizing electricity, expanding electrification, reducing emissions in sectors that are harder to electrify, and using negative emissions technologies where emissions are difficult or costly to eliminate.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_015",
+      "question": "What does the report mean by the lowest-hanging fruit in climate policy?",
+      "expected_answer": "The report uses the equimarginal principle to explain that emissions reductions should start where they are cheapest and easiest to achieve. In practical terms, this means prioritizing lower-cost decarbonization opportunities first, such as clean electricity, before moving to sectors where emissions are harder and more expensive to reduce.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "eval_016",
+      "question": "Why is clean electricity so important in the report's climate strategy?",
+      "expected_answer": "Clean electricity is central because it can reduce emissions directly in the power sector and also support emissions reductions in other sectors through electrification. Once electricity is generated with low or zero carbon emissions, more transportation, buildings, and industrial activity can shift away from fossil fuels.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_017",
+      "question": "How did the U.S. economic recovery compare with other G7 countries?",
+      "expected_answer": "The U.S. recovery was faster and stronger than the recoveries of other G7 countries. U.S. real GDP returned to its prior peak in five quarters, and growth since the pre-pandemic peak was more than double the next-largest expansion among G7 economies.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_018",
+      "question": "What happened to consumer spending after the pandemic recession?",
+      "expected_answer": "Consumer spending recovered strongly and became a major driver of economic growth. Real spending surpassed its pre-pandemic level in January 2021 and continued rising, supported by household relief, wage gains, and stronger household balance sheets.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "eval_019",
+      "question": "What problem does the report identify with the K-12 teacher workforce?",
+      "expected_answer": "There is a serious shortage of qualified teachers in K-12 education. The supply of new teacher licensures relative to school-age children fell by 26 percent from 2001 to 2022, and one out of every eight public school teaching positions was either vacant or filled by an underqualified teacher.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "eval_020",
+      "question": "Why does the report say it is hard to attract and keep teachers?",
+      "expected_answer": "One major reason is that teachers earn less than comparable workers in other occupations. Teachers face a negative wage premium, with median wages about 20 percent lower than similar workers, making the profession less attractive and contributing to teacher shortages.",
+      "difficulty": "medium"
+    }
+  ]
+}
