@@ -1,5 +1,6 @@
 import json
 import sys
+import time
 from pathlib import Path
 from dataclasses import dataclass
 
@@ -46,10 +47,11 @@ class RAGEvaluator:
         candidates = retriever.retrieve(question, query_embedding, top_k=20)
 
         reranker = Reranker()
-        results = reranker.rerank(question, candidates, top_k=5)
+        results = reranker.rerank(question, candidates, top_k=3)
 
+        # truncate chunks to keep prompt under Groq's 6000 TPM free tier limit
         context = "\n\n".join(
-            f"[{i+1}] (Source: {r['metadata'].get('source', 'unknown')})\n{r['text']}"
+            f"[{i+1}] (Source: {r['metadata'].get('source', 'unknown')})\n{r['text'][:800]}"
             for i, r in enumerate(results)
         )
 
@@ -94,6 +96,8 @@ class RAGEvaluator:
         questions, ground_truths, answers, contexts = [], [], [], []
 
         for i, pair in enumerate(pairs):
+            if i > 0:
+                time.sleep(60)  # wait full minute between calls — 6000 TPM resets every 60s
             print(f"  [{i+1}/{len(pairs)}] {pair['question'][:60]}...")
             result = self.run_pipeline(pair["question"])
             questions.append(pair["question"])
