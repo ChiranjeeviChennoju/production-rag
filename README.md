@@ -1,8 +1,6 @@
 # Production-Grade RAG System
 
-A fully open-source Retrieval-Augmented Generation (RAG) system that ingests PDFs, performs hybrid retrieval, re-ranks with a cross-encoder, generates cited answers via an LLM, and verifies grounding to flag potential hallucinations.
-
-Built end-to-end as a portfolio project to demonstrate **production RAG engineering** — not just "call an embedding API and stuff results into a prompt."
+ Retrieval-Augmented Generation (RAG) system that ingests PDFs, performs hybrid retrieval, re-ranks with a cross-encoder, generates cited answers via an LLM, and verifies grounding to flag potential hallucinations.
 
 ---
 
@@ -193,21 +191,6 @@ Prompts live in YAML files under `prompts/`, loaded by `PromptManager`. This mea
 ### Citation Grounding
 
 After the LLM generates an answer, the citation checker scans for `[1]`, `[2]` markers and verifies that key claims actually appear in the retrieved chunks (n-gram overlap). Answers below a confidence threshold are flagged in the UI as potentially hallucinated.
-
----
-
-## Roadmap
-
-- [x] Document ingestion + recursive chunking
-- [x] Hybrid retrieval (vector + BM25 with RRF fusion)
-- [x] Cross-encoder re-ranking
-- [x] Versioned YAML prompt management
-- [x] Citation grounding checker
-- [x] Streamlit UI with retrieval inspection
-- [ ] RAGAS evaluation suite
-- [ ] GitHub Actions CI with quality gates
-- [ ] FastAPI serving layer
-- [ ] Dockerized deployment
 
 ---
 
